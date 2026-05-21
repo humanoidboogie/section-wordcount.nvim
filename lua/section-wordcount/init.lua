@@ -6,7 +6,7 @@ local M = {}
 
 local function line_wordcount(line)
 	-- Replace each word with empty string and it returns the number of words replaced.
-	_, n = line:gsub("%S", "")
+	_, n = line:gsub("%S+", "")
 	return n
 end
 
